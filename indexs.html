@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Icon/favicon-16x16.png">
+    <link rel="manifest" href="Icon/site.webmanifest">
+    <link rel="mask-icon" href="Icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Трактир «Пушкин»</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="scriptsslider.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js"></script>
+</head>
+<body>
+    <section class="header_wrap">
+        <div class="header">
+            <a href="#" class="h_logo">
+                <img src="Images/logo.svg" class="logo_header" alt="UberEats">
+            </a>
+            <div class="enter_basket">
+                <button class="btn_header">Войти</button>
+                <a href="#">
+                    <img src="Images/basket.svg" class="bsk_header">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="r_info_wrap">
+        <div class="r_container">
+            <div class="r_info">
+                <div class="r_info_card">
+                    <h1 class="r_name">Трактир «Пушкин»</h1>
+                    <div class="r_info_more">
+                        <p class="r_type">₽₽₽ • Европейская</p>
+                        <p class="r_time">40 - 50 мин.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="foodtype_wrap">
+        <div class="foodtypes">
+            <div class="f_type">
+                <input type="radio" id="food1" name="tab-group1" checked>
+                <label for="food1" class="tab-title">Закуски</label>
+            </div>
+            
+            <div class="f_type">
+                <input type="radio" id="food2" name="tab-group2">
+                <label for="food2" class="tab-title">Салаты</label>
+            </div>
+
+            <div class="f_type">
+                <input type="radio" id="food3" name="tab-group3">
+                <label for="food3" class="tab-title">Супы</label>
+            </div>
+
+            <div class="f_type">
+                <input type="radio" id="food4" name="tab-group4">
+                <label for="food4" class="tab-title">Горячие блюда</label>
+            </div>
+
+            <div class="f_type">
+                <input type="radio" id="food5" name="tab-group5">
+                <label for="food5" class="tab-title">Гарниры</label>
+            </div>
+
+            <div class="f_type">
+                <input type="radio" id="food6" name="tab-group6">
+                <label for="food6" class="tab-title">Десерты</label>
+            </div>
+        </div>
+        <div class="content">
+            <div class="slider single-item" data-xthreshold="100">
+                <div class="f_type f_type1">
+                    <input type="radio" id="food1" name="tab-group" checked>
+                    <label for="food1" class="tab-title">Закуски</label>
+                </div>
+                
+                <div class="f_type f_type2">
+                    <input type="radio" id="food2" name="tab-group">
+                    <label for="food2" class="tab-title">Салаты</label>
+                </div>
+
+                <div class="f_type f_type3">
+                    <input type="radio" id="food3" name="tab-group">
+                    <label for="food3" class="tab-title">Супы</label>
+                </div>
+
+                <div class="f_type f_type4">
+                    <input type="radio" id="food4" name="tab-group">
+                    <label for="food4" class="tab-title">Горячие блюда</label>
+                </div>
+
+                <div class="f_type f_type5">
+                    <input type="radio" id="food5" name="tab-group">
+                    <label for="food5" class="tab-title">Гарниры</label>
+                </div>
+
+                <div class="f_type f_type6">
+                    <input type="radio" id="food6" name="tab-group">
+                    <label for="food6" class="tab-title">Десерты</label>
+                </div>
+            </div>
+        </div>
+        <hr class="hr_food">
+        <div class="choosen_food1">
+            <div class="f_name">Закуски</div>
+            <div class="food_cards">
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сельдь на бородинском хлебе</div>
+                                <div class="foodbio2">С яйцом и огурцом, 150 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">240 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/a.png" alt="food1">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Соленья ассорти</div>
+                                <div class="foodbio2">200 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/b.png" alt="food2">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Грибы маринованные</div>
+                                <div class="foodbio2">260 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">300 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/c.png" alt="food3">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сало домашнее с горчицей</div>
+                                <div class="foodbio2">300 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/d.png" alt="food4">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Малосольная сёмга</div>
+                                <div class="foodbio2">290 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">390 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/e.png" alt="food5">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Язык говяжий с хреном</div>
+                                <div class="foodbio2">365 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">350 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/f.png" alt="food6">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="choosen_food2">
+            <div class="f_name">Салаты</div>
+            <div class="food_cards">
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сало домашнее с горчицей</div>
+                                <div class="foodbio2">300 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/d.png" alt="food4">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Соленья ассорти</div>
+                                <div class="foodbio2">200 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/b.png" alt="food2">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Грибы маринованные</div>
+                                <div class="foodbio2">250 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">300 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/c.png" alt="food3">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Малосольная сёмга</div>
+                                <div class="foodbio2">290 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">390 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/e.png" alt="food5">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Язык говяжий с хреном</div>
+                                <div class="foodbio2">400 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">350 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/f.png" alt="food6">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сельдь на бородинском хлебе</div>
+                                <div class="foodbio2">320 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">240 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/a.png" alt="food1">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="choosen_food3">
+            <div class="f_name">Супы</div>
+            <div class="food_cards">
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Язык говяжий с хреном</div>
+                                <div class="foodbio2">410 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">350 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/f.png" alt="food6">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Грибы маринованные</div>
+                                <div class="foodbio2">360 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">300 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/c.png" alt="food3">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сало домашнее с горчицей</div>
+                                <div class="foodbio2">375 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/d.png" alt="food4">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Соленья ассорти</div>
+                                <div class="foodbio2">250 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/b.png" alt="food2">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Малосольная сёмга</div>
+                                <div class="foodbio2">275 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">390 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/e.png" alt="food5">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сельдь на бородинском хлебе</div>
+                                <div class="foodbio2">250 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">240 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/a.png" alt="food1">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="choosen_food4">
+            <div class="f_name">Горячие блюда</div>
+            <div class="food_cards">
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Малосольная сёмга</div>
+                                <div class="foodbio2">150 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">390 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/e.png" alt="food5">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Грибы маринованные</div>
+                                <div class="foodbio2">250 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">300 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/c.png" alt="food3">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Язык говяжий с хреном</div>
+                                <div class="foodbio2">390 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">350 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/f.png" alt="food6">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сало домашнее с горчицей</div>
+                                <div class="foodbio2">280 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/d.png" alt="food4">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Соленья ассорти</div>
+                                <div class="foodbio2">200 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/b.png" alt="food2">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сельдь на бородинском хлебе</div>
+                                <div class="foodbio2">300 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">240 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/a.png" alt="food1">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="choosen_food5">
+            <div class="f_name">Гарниры</div>
+            <div class="food_cards">
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сало домашнее с горчицей</div>
+                                <div class="foodbio2">340 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/d.png" alt="food4">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Грибы маринованные</div>
+                                <div class="foodbio2">255 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">300 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/c.png" alt="food3">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сельдь на бородинском хлебе</div>
+                                <div class="foodbio2">200 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">240 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/a.png" alt="food1">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Язык говяжий с хреном</div>
+                                <div class="foodbio2">290 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">350 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/f.png" alt="food6">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Малосольная сёмга</div>
+                                <div class="foodbio2">190 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">390 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/e.png" alt="food5">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Соленья ассорти</div>
+                                <div class="foodbio2">240 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/b.png" alt="food2">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="choosen_food6">
+            <div class="f_name">Десерты</div>
+            <div class="food_cards">
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Язык говяжий с хреном</div>
+                                <div class="foodbio2">300 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">350 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/f.png" alt="food6">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Малосольная сёмга</div>
+                                <div class="foodbio2">260 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">390 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/e.png" alt="food5">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сельдь на бородинском хлебе</div>
+                                <div class="foodbio2">180 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">240 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/a.png" alt="food1">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Сало домашнее с горчицей</div>
+                                <div class="foodbio2">320 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/d.png" alt="food4">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Грибы маринованные</div>
+                                <div class="foodbio2">200 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">300 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/c.png" alt="food3">
+                        </div>
+                    </a>
+                </div>
+                <div class="food_card">
+                    <a href="#" class="f_card">
+                        <div class="foodbio">
+                            <div class="foodbioinfo">
+                                <div class="foodbio1">Соленья ассорти</div>
+                                <div class="foodbio2">180 г</div>
+                            </div>
+                            <div class="foodbioprice">
+                                <div class="foodprice">320 ₽</div>
+                            </div>
+                        </div>
+                        <div class="foodimage">
+                            <img src="Imagess/b.png" alt="food2">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer_wrap">
+        <div class="footer">
+            <img src="Images/logo2.svg" class="logo_footer" alt="logo_footer">
+            <hr>
+            <div class="fsec">
+                <div class="fsec_p1">
+                    <div class="lang_button">
+                        <img src="Images/footer1.svg" class="l_button" alt="button_image">
+                        <select name="language_selector" class="lang_selector">
+                            <option value="ru">Русский</option>
+                            <option value="en">English</option>
+                            <option value="fr">Français</option>
+                            <option value="de">Deutsch</option>
+                            <option value="ch">简体中文</option>
+                        </select>
+                    </div>
+                    <a href="#" class="aaa">
+                        <ul class="ulul">
+                            <li>#</li>
+                            <li>U</li>
+                            <li>b</li>
+                            <li>e</li>
+                            <li>r</li>
+                            <li>E</li>
+                            <li>a</li>
+                            <li>t</li>
+                            <li>s</li>
+                        </ul>
+                    </a>
+                    <div class="social">
+                        <ul class="social_logo">
+                            <li class="fbl">
+                                <a href="#">
+                                    <img src="Images/facebook.svg" class="fb_logo" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="twl">    
+                                <a href="#">
+                                    <img src="Images/twitter.svg" class="twi_logo" alt="twitter">
+                                </a>
+                            </li>
+                            <li class="instl">
+                                <a href="#">
+                                    <img src="Images/instagram.svg" class="inst_logo" alt="instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fsec_p2">
+                    <ul class="partners">
+                        <li class="partner">
+                            <a href="#">
+                                Об UberEats
+                            </a>
+                        </li>
+                        <li class="partner">
+                            <a href="#">
+                                Станьте партнёром по доставке
+                            </a>
+                        </li>
+                        <li class="partner">
+                            <a href="#">
+                                Станьте партнёром-рестораном
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fsec_p3">
+                    <ul class="faqs">
+                        <li class="faq">
+                            <a href="#">
+                                Все города
+                            </a>
+                        </li>
+                        <li class="faq">
+                            <a href="#">
+                                Цены
+                            </a>
+                        </li>
+                        <li class="faq">
+                            <a href="#">
+                                Помощь
+                            </a>
+                        </li>
+                        <li class="faq">
+                            <a href="#">
+                                FAQs
+                            </a>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+            <hr>
+            <div class="fsec_download">
+                <a href="#" class="appstore">
+                    <img src="Images/download1.png" class="btn as_btn" alt="appstore">
+                </a>
+                <a href="#" class="playmarket">
+                    <img src="Images/download2.png" class="btn pm_btn" alt="playmarket">
+                </a>
+            </div>
+            <hr>
+            <div class="Fsec_bottom">
+                <div class="Fsec_bottom_link">
+                    <a href="#">© 2017 Uber Technologies Inc.</a>
+                </div>
+                <div class="Fsec_bottom_link">
+                    <a href="#">Обработка персональных данных</a>
+                </div>
+                <div class="Fsec_bottom_link">
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button onclick="topFunction()" id="anchor" title="Go to top" style="display: inline-block;">
+        <img src="Images/btn-up.png" alt="up">
+    </button>
+</body>
+</html>
